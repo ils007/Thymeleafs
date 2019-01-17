@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}" />
+    <meta charset="UTF-8">
+    <title>Главная Экип24</title>
+</head>
+<body>
+    <div class="container">
+        <div th:replace="header"></div>
+        <h1 th:text="#{main.title}"></h1>
+        <p th:text="#{main.welcome}">
+            приветствие
+        </p>
+        <footer>
+            <div>
+                &copy; Все права защищены.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

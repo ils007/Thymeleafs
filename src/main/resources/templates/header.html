@@ -1,0 +1,14 @@
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+
+<body>
+<header th:fragment="header">
+    <img src="" th:src="@{/img/DirtBike.png}" alt="logo" id="logo" width="100">
+    <div th:text="#{site.name}"></div>
+    <ul class="menu">
+        <li><a href="index.html" th:href="@{/index}" th:text="#{main.title}"> Главная</a></li>
+        <li><a href="team.html" th:href="@{/team}" th:text="#{main.list}"> Команда</a></li>
+        <li><a href="contacts.html"> Контакты</a></li>
+    </ul>
+</header>
+</body>
